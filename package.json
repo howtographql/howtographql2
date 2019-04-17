@@ -1,0 +1,12 @@
+{
+  "name": "howtographql2",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "develop": "yarn workspace site develop"
+  },
+  "workspaces": [
+    "site",
+    "packages/*"
+  ]
+}
