@@ -1,10 +1,9 @@
 import { RouterProps } from '@reach/router';
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider, styled } from '../styles';
 import { useLayoutQuery } from '../hooks/useLayoutQuery';
 import Header from './header';
-import './layout.css';
 
 interface ThemeProps {
   colorPrimary: string;

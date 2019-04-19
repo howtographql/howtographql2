@@ -1,11 +1,5 @@
-import {
-  Colors,
-  Sizes,
-  ZIndex,
-  Shorthands,
-  EditorColors,
-  Shape,
-} from './index';
+import { Colors, Sizes, ZIndex, Shorthands, Shape } from './index';
+import { Transitions } from '../transitions.d';
 export interface ThemeInterface {
   mode: 'light' | 'dark';
   colors: Colors;
@@ -15,5 +9,4 @@ export interface ThemeInterface {
   zIndex: ZIndex;
   shorthands: Shorthands;
   transitions: Transitions;
-  editorColors: EditorColors;
 }

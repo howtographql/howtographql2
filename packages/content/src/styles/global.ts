@@ -1,13 +1,18 @@
-import { css } from 'styled-components'
+import { css, createGlobalStyle } from './styled.ts';
+import { css as styledCss } from 'styled-components';
 
 // Utilities
-import theme from './theme'
+import { theme } from './theme';
+import normalize from './normalize';
 
-export const documentStyles = css`
+console.log(styledCss);
+console.log(css);
+console.log(createGlobalStyle);
+const documentStyles = css`
   html {
     line-height: 1.15;
     box-sizing: border-box;
-    background: ${theme.primaryDark1};
+    background: white;
   }
 
   body {
@@ -36,20 +41,25 @@ export const documentStyles = css`
   a {
     color: currentColor;
     text-decoration: none;
-    font-size: ${theme.sizeActions}px;
+    font-size: ${theme.sizes.sizeActions}px;
     transition: color 100ms ease;
   }
 
   ::selection {
-    background: ${theme.primary};
+    background: ${theme.colors.primary};
     color: white;
   }
 
   code {
-    font-family: ${theme.fontStackMono};
+    font-family: ${theme.sizes.fontStackMono};
   }
 
   #nprogress .bar {
     height: 3px;
   }
-`
+`;
+
+export const GlobalStyles = createGlobalStyle`
+${documentStyles}
+${normalize}
+`;

@@ -1,5 +1,5 @@
-import { css } from 'styled-components'
-import theme from './theme'
+import { css } from 'styled-components';
+import { theme } from './theme';
 
 export default css`
   /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -54,8 +54,9 @@ export default css`
   */
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
   }
 
   /**
@@ -108,7 +109,7 @@ export default css`
   kbd,
   samp,
   pre {
-    font-family: ${theme.fontStackMono}; /* 1 */
+    font-family: ${theme.sizes.fontStackMono}; /* 1 */
     font-size: 1em; /* 2 */
   }
 
@@ -277,4 +278,4 @@ export default css`
   summary {
     display: list-item;
   }
-`
+`;
