@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
-import styled from 'styled-components';
+import { styled } from '../styles';
 import { useListingQuery } from '../hooks/useListingQuery';
 
 const Post = styled.article`
@@ -26,7 +26,7 @@ const Post = styled.article`
 const ReadMoreLink = styled(Link)`
   font-size: 0.8rem;
   text-decoration: underline;
-  color: ${props => props.theme.colorPrimary};
+  color: ${props => props.theme.colors.primary};
 `;
 
 const Listing = () => {

@@ -1,17 +1,9 @@
 import { RouterProps } from '@reach/router';
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import { ThemeProvider, styled } from '../styles';
+import { theme, ThemeProvider, styled } from '../styles';
 import { useLayoutQuery } from '../hooks/useLayoutQuery';
 import Header from './header';
-
-interface ThemeProps {
-  colorPrimary: string;
-}
-
-const theme: ThemeProps = {
-  colorPrimary: '#663399',
-};
 
 const MainLayout = styled.main`
   max-width: 90%;
