@@ -1,13 +1,9 @@
-import { css, createGlobalStyle } from './styled.ts';
-import { css as styledCss } from 'styled-components';
+import { css, createGlobalStyle } from './styled';
 
 // Utilities
 import { theme } from './theme';
 import normalize from './normalize';
 
-console.log(styledCss);
-console.log(css);
-console.log(createGlobalStyle);
 const documentStyles = css`
   html {
     line-height: 1.15;
