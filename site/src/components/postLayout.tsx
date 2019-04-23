@@ -11,7 +11,7 @@ const PostLayout: React.FunctionComponent<any> = ({ data, ...props }) => {
 
   return (
     <div>
-      <h1>TESTING</h1>
+      <h1>{title}</h1>
       <em>{date}</em>
       {children}
     </div>
