@@ -11,7 +11,6 @@ export default ({ siteTitle }) => {
   return (
     <div>
       <Logo />
-      <SpecialHeader>Special Header</SpecialHeader>
     </div>
   );
 };
