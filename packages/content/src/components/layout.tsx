@@ -1,9 +1,9 @@
 import { RouterProps } from '@reach/router';
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import { theme, ThemeProvider, styled, withTheme } from '../styles';
+import { theme, ThemeProvider, styled } from '../styles';
 import { useLayoutQuery } from '../hooks/useLayoutQuery';
-import Header from './header';
+import Header from './Header';
 
 const MainLayout = styled.main`
   max-width: 90%;

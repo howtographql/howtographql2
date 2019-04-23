@@ -1,34 +1,22 @@
 import * as React from 'react';
 import Link from 'gatsby-link';
+import { styled } from '../styles';
+
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  text-transform: uppercase;
+`;
 
 export default function Logo() {
   return (
-    <div className="logo-wrapper">
-      <style jsx={true}>{`
-        .logo {
-          @p: .flex, .ttu, .fw6, .itemsCenter, .pink;
-          z-index: 10102;
-          font-size: 17px;
-        }
-        .logo img {
-          @p: .mr10;
-        }
-        .logo span {
-          @p: .flexFixed;
-        }
-        img {
-          width: 40px;
-          height: 35px;
-        }
-        .logo-wrapper {
-          @p: .flex, .pa16, .itemsCenter;
-        }
-      `}</style>
+    <div>
       <Link to="/">
-        <div className="logo">
+        <LogoWrapper>
           <img src={require('../assets/icons/howtographql.svg')} alt="" />
           <span>How to GraphQL</span>
-        </div>
+        </LogoWrapper>
       </Link>
     </div>
   );

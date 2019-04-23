@@ -40,6 +40,7 @@ const zIndex: ZIndex = {
 };
 
 export interface Colors {
+  fontColor: string;
   primary: string;
   primaryDark1: string;
   primaryLight1: string;
@@ -68,7 +69,8 @@ export interface Colors {
 
 export const darkColors: Colors = {
   //// Colors
-  primary: '#0C344B',
+  fontColor: '#909090',
+  primary: '#e00082',
   primaryDark1: '#082333',
   primaryLight1: '#3D5866',
   primaryLight2: '#8FA6B2',
@@ -96,6 +98,7 @@ export const darkColors: Colors = {
 
 export const lightColors: Colors = {
   //// Colors
+  fontColor: '#909090',
   primary: '#0C344B',
   primaryDark1: '#082333',
   primaryLight1: '#3D5866',

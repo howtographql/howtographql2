@@ -6,7 +6,7 @@ const options: TypographyOptions = {
   baseFontSize: '16px',
   baseLineHeight: 1.625,
   headerFontFamily: [
-    'Source Code Pro',
+    'Comic Sans MS',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -42,7 +42,8 @@ const options: TypographyOptions = {
     },
   ],
   scaleRatio: 2,
-  bodyColor: styledTheme.colors.white,
+  bodyColor: styledTheme.colors.fontColor,
+  headerColor: styledTheme.colors.fontColor,
   headerWeight: 600,
   bodyWeight: 'normal',
   boldWeight: 600,
@@ -63,11 +64,11 @@ const options: TypographyOptions = {
     h4: {},
     h5: {},
     h6: {},
-    'h2,h3,h4,h5': {
-      fontFamily:
-        '"Source Code Pro", "SFMono-Regular", Consolas,"Roboto Mono","Droid Sans Mono","Liberation Mono",Menlo,Courier,monospace',
-      fontWeight: '400',
-    },
+    // 'h2,h3,h4,h5': {
+    //   fontFamily:
+    //     '"Source Code Pro", "SFMono-Regular", Consolas,"Roboto Mono","Droid Sans Mono","Liberation Mono",Menlo,Courier,monospace',
+    //   fontWeight: '400',
+    // },
     'h3,h4,h5,h6': {
       marginBottom: rhythm(1 / 2),
       marginTop: rhythm(1),
@@ -80,6 +81,7 @@ const options: TypographyOptions = {
       marginLeft: rhythm(1.25),
     },
     a: {
+      color: styledTheme.colors.primary,
       textDecoration: 'none',
     },
     'a:hover,a:active': {
