@@ -40,88 +40,46 @@ const zIndex: ZIndex = {
 };
 
 export interface Colors {
-  fontColor: string;
   primary: string;
   primaryDark1: string;
   primaryLight1: string;
-  primaryLight2: string;
-  primaryLight3: string;
-  primaryLight4: string;
-  primaryLight5: string;
-  primaryLight6: string;
-  primaryLight7: string;
-  orange: string;
-  orangeLight1: string;
-  violet: string;
-  violetLight1: string;
-  green: string;
-  greenLight1: string;
+  secondary: string;
+  secondaryDark1: string;
+  secondaryLight1: string;
   blue: string;
   blueLight1: string;
-  lightBlue: string;
-  lightBlueLight1: string;
-  red: string;
-  redLight1: string;
-  yellow: string;
-  yellowLight1: string;
+  blueDark1: string;
+  lightGray: string;
   white: string;
 }
 
 export const darkColors: Colors = {
   //// Colors
-  fontColor: '#909090',
   primary: '#e00082',
-  primaryDark1: '#082333',
-  primaryLight1: '#3D5866',
-  primaryLight2: '#8FA6B2',
-  primaryLight3: '#CCD9DF',
-  primaryLight4: '#EFF3F5',
-  primaryLight5: '#F0F0F0',
-  primaryLight6: '#F7F9FA',
-  primaryLight7: '#EDF2F5',
-  orange: '#FF8934',
-  orangeLight1: '#FFF1BD',
-  violet: '#AA0D95',
-  violetLight1: '#F2CFED',
-  green: '#15BD76',
-  greenLight1: '#C2F0DC',
-  blue: '#0F7AD8',
+  primaryDark1: '#a4036f',
+  primaryLight1: '#EB7BBC',
+  secondary: '#172a3a',
+  secondaryDark1: 'rgb(0, 0, 0)',
+  secondaryLight1: 'rgba(23, 42, 58, .5)',
+  blue: '#2a7ed2',
   blueLight1: '#C2DCF2',
-  lightBlue: '#00CCE4',
-  lightBlueLight1: '#B8EDF3',
-  red: '#FF4F56',
-  redLight1: '#FFDCDE',
-  yellow: '#FFCC07',
-  yellowLight1: '#FFF1BD',
+  blueDark1: '#2a7ed2',
+  lightGray: 'rgb(244, 244, 244)',
   white: '#fff',
 };
 
 export const lightColors: Colors = {
   //// Colors
-  fontColor: '#909090',
-  primary: '#0C344B',
+  primary: '#e00082',
   primaryDark1: '#082333',
-  primaryLight1: '#3D5866',
-  primaryLight2: '#8FA6B2',
-  primaryLight3: '#CCD9DF',
-  primaryLight4: '#EFF3F5',
-  primaryLight5: '#F0F0F0',
-  primaryLight6: '#F7F9FA',
-  primaryLight7: '#EDF2F5',
-  orange: '#FF8934',
-  orangeLight1: '#FFF1BD',
-  violet: '#AA0D95',
-  violetLight1: '#F2CFED',
-  green: '#15BD76',
-  greenLight1: '#C2F0DC',
+  primaryLight1: '#EB7BBC',
+  secondary: '#082333',
+  secondaryDark1: '#082333',
+  secondaryLight1: '#082333',
   blue: '#0F7AD8',
-  blueLight1: '#C2DCF2',
-  lightBlue: '#00CCE4',
-  lightBlueLight1: '#B8EDF3',
-  red: '#FF4F56',
-  redLight1: '#FFDCDE',
-  yellow: '#FFCC07',
-  yellowLight1: '#FFF1BD',
+  blueLight1: '#459BF2',
+  blueDark1: '#2a7ed2',
+  lightGray: '#f9f9f9',
   white: '#fff',
 };
 

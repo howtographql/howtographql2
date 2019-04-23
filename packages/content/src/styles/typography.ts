@@ -6,7 +6,7 @@ const options: TypographyOptions = {
   baseFontSize: '16px',
   baseLineHeight: 1.625,
   headerFontFamily: [
-    'Comic Sans MS',
+    'Open Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -42,8 +42,8 @@ const options: TypographyOptions = {
     },
   ],
   scaleRatio: 2,
-  bodyColor: styledTheme.colors.fontColor,
-  headerColor: styledTheme.colors.fontColor,
+  bodyColor: styledTheme.colors.secondaryLight1,
+  headerColor: styledTheme.colors.secondaryDark1,
   headerWeight: 600,
   bodyWeight: 'normal',
   boldWeight: 600,
@@ -81,14 +81,14 @@ const options: TypographyOptions = {
       marginLeft: rhythm(1.25),
     },
     a: {
-      color: styledTheme.colors.primary,
+      color: styledTheme.colors.blue,
       textDecoration: 'none',
     },
     'a:hover,a:active': {
       textDecoration: 'underline',
     },
     blockquote: {
-      borderLeft: `4px solid ${styledTheme.colors.primary}`,
+      borderLeft: `4px solid ${styledTheme.colors.lightGray}`,
 
       marginTop: 0,
       marginRight: 0,
