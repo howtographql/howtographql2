@@ -1,4 +1,5 @@
 import shadows from '../shadows';
+import { ThemeInterface } from './ThemeInterface';
 
 // Guide
 // [C] means `Component`
@@ -62,6 +63,7 @@ export interface Colors {
   redLight1: string;
   yellow: string;
   yellowLight1: string;
+  white: string;
 }
 
 export const darkColors: Colors = {
@@ -89,6 +91,7 @@ export const darkColors: Colors = {
   redLight1: '#FFDCDE',
   yellow: '#FFCC07',
   yellowLight1: '#FFF1BD',
+  white: '#fff',
 };
 
 export const lightColors: Colors = {
@@ -116,6 +119,7 @@ export const lightColors: Colors = {
   redLight1: '#FFDCDE',
   yellow: '#FFCC07',
   yellowLight1: '#FFF1BD',
+  white: '#fff',
 };
 
 export interface Sizes {
@@ -202,15 +206,6 @@ export const sizes: Sizes = {
   fontStackMono:
     "SFMono-Regular, 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace",
 };
-
-export interface ThemeInterface {
-  mode: 'light' | 'dark';
-  colors: Colors;
-  sizes: Sizes;
-  shape: Shape;
-  shadows: any;
-  zIndex: ZIndex;
-}
 
 export const theme: ThemeInterface = {
   mode: 'dark',

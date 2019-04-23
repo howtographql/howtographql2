@@ -8,6 +8,7 @@
     "@types/jest": "^24.0.11",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.12",
+    "@types/typography": "^0.16.2",
     "gatsby": "^2.3.24",
     "jest": "^24.5.0",
     "jest-dom": "^3.1.3",

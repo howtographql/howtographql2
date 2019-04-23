@@ -1,8 +1,9 @@
 import * as styledComponents from 'styled-components';
 import { ThemedStyledComponentsModule } from 'styled-components'; // tslint:disable-line
 import { ComponentClass } from 'react'; // tslint:disable-line
-import { ThemeInterface, theme } from './theme/index';
+import { theme } from './theme/index';
 import { mobile, phone } from './mobile';
+import { ThemeInterface } from './theme/ThemeInterface';
 
 const viewport = typeof window !== 'undefined' && window;
 
