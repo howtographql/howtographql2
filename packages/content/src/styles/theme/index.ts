@@ -1,7 +1,4 @@
 import shadows from '../shadows';
-import { ThemeInterface } from './interface';
-
-import transitions from '../transitions';
 
 // Guide
 // [C] means `Component`
@@ -18,6 +15,7 @@ import transitions from '../transitions';
 export interface Shape {
   borderRadius: number;
 }
+
 const shape: Shape = {
   borderRadius: 4,
 };
@@ -205,11 +203,14 @@ export const sizes: Sizes = {
     "SFMono-Regular, 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace",
 };
 
-export interface Shorthands {
-  [x: string]: any;
+export interface ThemeInterface {
+  mode: 'light' | 'dark';
+  colors: Colors;
+  sizes: Sizes;
+  shape: Shape;
+  shadows: any;
+  zIndex: ZIndex;
 }
-
-export const shorthands: Shorthands = {};
 
 export const theme: ThemeInterface = {
   mode: 'dark',
@@ -218,8 +219,4 @@ export const theme: ThemeInterface = {
   shape,
   shadows,
   zIndex,
-  shorthands,
-  transitions,
 };
-
-export { ThemeInterface };

@@ -1,7 +1,7 @@
 import { RouterProps } from '@reach/router';
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import { theme, ThemeProvider, styled } from '../styles';
+import { theme, ThemeProvider, styled, withTheme } from '../styles';
 import { useLayoutQuery } from '../hooks/useLayoutQuery';
 import Header from './header';
 
