@@ -144,14 +144,16 @@ rather imperative data fetching approach to a purely declarative one. When
 fetching data from a REST API, most applications will have to go through the
 following steps:
 
-1. construct and send HTTP request (e.g. with `fetch` in Javascript) 2. receive
-   and parse server response 3. store data locally (either simply in memory or
-   persistent) 4. display data in the UI
+1. construct and send HTTP request (e.g. with ```fetch``` in Javascript)
+2. receive and parse server response
+3. store data locally (either simply in memory orpersistent)
+4. display data in the UI
 
 With the ideal _declarative data fetching_ approach, a client shouldn't be
 doing more than the following two steps:
 
-1. describe data requirements 2. display data in UI
+1. describe data requirements
+2. display data in UI
 
 All the lower-level networking tasks as well as storing the data should be
 abstracted away and the declaration of data dependencies should be the dominant
