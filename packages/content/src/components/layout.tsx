@@ -3,7 +3,7 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { theme, ThemeProvider, styled } from '../styles';
 import { useLayoutQuery } from '../hooks/useLayoutQuery';
-import Header from './Header';
+import Header from './shared/Header';
 
 const MainLayout = styled.main`
   max-width: 90%;
@@ -11,6 +11,7 @@ const MainLayout = styled.main`
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 4rem;
+  padding-top: 68px;
 `;
 
 type LayoutProps = React.ReactNode & RouterProps;

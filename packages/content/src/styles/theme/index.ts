@@ -147,7 +147,7 @@ export const sizes: Sizes = {
   middleContainerWidth: 1200,
   middleContainerNarrowWidth: 1100,
   // [C] Nav
-  navHeight: 40,
+  navHeight: 67,
   // Spaces
   space8: 8,
   space12: 12,
