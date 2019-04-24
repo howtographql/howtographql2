@@ -52,10 +52,10 @@ of that user. How would that situation be solved with REST and GraphQL?
 ### Data Fetching with REST vs GraphQL
 
 With a REST API, you would typically gather the data by accessing multiple
-endpoints. In the example, these could be `/users/<id>` endpoint to fetch the
-initial user data. Secondly, there's likely to be a `/users/<id>/posts`
+endpoints. In the example, these could be ```/users/<id>``` endpoint to fetch the
+initial user data. Secondly, there's likely to be a ```/users/<id>/posts```
 endpoint that returns all the posts for a user. The third endpoint will then be
-the `/users/<id>/followers` that returns a list of followers per user.
+the ```/users/<id>/followers``` that returns a list of followers per user.
 
 ![](https://imgur.com/VRyV7Jh.png) _With REST, you have to make three requests
 to different endpoints to fetch the required data. You're also *overfetching*
@@ -85,7 +85,7 @@ the API in a way that it's able to provide clients with their exact data needs.
 _Overfetching_ means that a client downloads more information than is actually
 required in the app. Imagine for example a screen that needs to display a list
 of users only with their names. In a REST API, this app would usually hit the
-`/users` endpoint and receive a JSON array with user data. This response however
+```/users``` endpoint and receive a JSON array with user data. This response however
 might contain more info about the users that are returned, e.g. their birthdays
 or addresses - information that is useless for the client because it only needs
 to display the users' names.
@@ -100,9 +100,9 @@ first download a list of elements, but then needs to make one additional
 request per element to fetch the required data.
 
 As an example, consider the same app would also need to display the last three
-followers per user. The API provides the additional endpoint `/users/<user-id> /followers`.
+followers per user. The API provides the additional endpoint ```/users/<user-id> /followers```.
 In order to be able to display the required information, the app will have to make one
-request to the `/users` endpoint and then hit the `/users/<user-id>/followers` endpoint for _each_ user.
+request to the ```/users``` endpoint and then hit the ```/users/<user-id>/followers``` endpoint for _each_ user.
 
 ### Rapid Product Iterations on the Frontend
 
