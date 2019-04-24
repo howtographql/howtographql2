@@ -18,13 +18,12 @@ duration: 10
 
 import { graphql } from 'gatsby';
 
-export const bigPictureQuery = graphql`
-  query bigPictureQuery($pagePath: String!) {
+export const communityBigPictureQuery = graphql`
+  query communityBigPictureQuery($pagePath: String!) {
     mdx(frontmatter: { path: { eq: $pagePath } }) {
       frontmatter {
         path
         title
-        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

@@ -18,13 +18,12 @@ duration: 15
 
 import { graphql } from 'gatsby';
 
-export const coreConceptsQuery = graphql`
-  query coreConceptsQuery($pagePath: String!) {
+export const guideConceptsQuery = graphql`
+  query communityConceptsQuery($pagePath: String!) {
     mdx(frontmatter: { path: { eq: $pagePath } }) {
       frontmatter {
         path
         title
-        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

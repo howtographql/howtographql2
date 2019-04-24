@@ -46,7 +46,7 @@ const Nav = withTheme(
       <Wrapper>
         <InnerWrapper>
           <Container>
-            <Logo maxHeight={theme.sizes.navHeight - 20} />
+            <Logo maxHeight={theme.sizes.brandHeight} />
           </Container>
           <Container justifyContent="center">
             <NavLink to="/tutorials">Fundamentals</NavLink>

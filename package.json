@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "develop": "yarn workspace site develop"
+    "develop": "yarn workspace site develop",
+    "clean": "yarn workspace site clean"
   },
   "workspaces": [
     "site",

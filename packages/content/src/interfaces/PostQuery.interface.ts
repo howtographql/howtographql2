@@ -4,8 +4,7 @@ export interface PostQueryData {
       frontmatter: {
         path: string;
         title: string;
-        date: string;
       };
     };
   };
-};
+}

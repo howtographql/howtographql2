@@ -105,6 +105,7 @@ export interface Sizes {
   middleContainerNarrowWidth: number;
   // [C] Nav
   navHeight: number;
+  brandHeight: number;
   // Spaces
   space8: number;
   space12: number;
@@ -147,7 +148,8 @@ export const sizes: Sizes = {
   middleContainerWidth: 1200,
   middleContainerNarrowWidth: 1100,
   // [C] Nav
-  navHeight: 67,
+  navHeight: 64,
+  brandHeight: 40,
   // Spaces
   space8: 8,
   space12: 12,
