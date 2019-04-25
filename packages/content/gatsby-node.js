@@ -1,5 +1,5 @@
 // const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope');
-const path = require('path');
+const { getTutorialPath } = require('./src/utils/getTutorialPath.js');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -20,10 +20,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `).catch(error => console.error(error));
   data.allMdx.edges.forEach(({ node }) => {
-    const tutorialType = path.basename(path.dirname(node.fileAbsolutePath));
-    console.log(tutorialType);
+    const tutorialPath = getTutorialPath(node.fileAbsolutePath);
     createPage({
-      path: `/${tutorialType}${node.frontmatter.path}`,
+      path: tutorialPath,
       component: node.fileAbsolutePath,
       context: {
         pagePath: node.frontmatter.path,

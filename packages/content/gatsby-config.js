@@ -11,6 +11,7 @@ module.exports = (opts = {}) => {
       'gatsby-transformer-sharp',
       'gatsby-plugin-sharp',
       'gatsby-plugin-typescript',
+      'gatsby-plugin-root-import',
       'gatsby-transformer-remark',
       'gatsby-image',
       'gatsby-plugin-styled-components',

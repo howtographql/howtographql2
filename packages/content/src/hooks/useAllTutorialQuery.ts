@@ -1,13 +1,14 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { PostsQueryData } from '../interfaces/PostsQuery.interface';
 
-export const useListingQuery = () => {
+export const useAllTutorialQuery = () => {
   const { allMdx }: PostsQueryData = useStaticQuery(graphql`
-    query LISTING_QUERY {
+    query ALL_TUTORIALS {
       allMdx {
         edges {
           node {
             excerpt
+            fileAbsolutePath
             frontmatter {
               path
               title

@@ -1,7 +1,8 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { styled } from '../styles';
-import { useListingQuery } from '../hooks/useListingQuery';
+import { useAllTutorialQuery } from '../hooks/useAllTutorialQuery';
+import { getTutorialPath } from '../utils/getTutorialPath';
 
 const Post = styled.article`
   box-shadow: 0 0.3rem 1rem rgba(25, 17, 34, 0.05);
@@ -30,23 +31,24 @@ const ReadMoreLink = styled(Link)`
 `;
 
 const Listing = () => {
-  const { allMdx } = useListingQuery();
+  const { allMdx } = useAllTutorialQuery();
 
   return (
     <>
       {allMdx &&
         allMdx.edges &&
         allMdx.edges.map(({ node }) => {
-          const { path, title, date } = node.frontmatter;
-
+          const fileAbsolutePath = node.fileAbsolutePath;
+          const { path, title } = node.frontmatter;
           return (
             <Post key={path}>
-              <Link to={`/posts${path}`}>
+              <Link to={getTutorialPath(fileAbsolutePath)}>
                 <h2>{title}</h2>
               </Link>
-              <p>{date}</p>
               <p>{node.excerpt}</p>
-              <ReadMoreLink to={`/tutorials${path}`}>Read More</ReadMoreLink>
+              <ReadMoreLink to={getTutorialPath(fileAbsolutePath)}>
+                Read More
+              </ReadMoreLink>
             </Post>
           );
         })}
