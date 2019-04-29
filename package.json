@@ -1,13 +1,21 @@
 {
-  "name": "howtographql2",
+  "name": "@howtographql/oss",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
   "private": true,
-  "version": "1.0.0",
   "scripts": {
-    "develop": "yarn workspace site develop",
-    "clean": "yarn workspace site clean"
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "gatsby": "gatsby"
   },
-  "workspaces": [
-    "site",
-    "packages/*"
-  ]
+  "dependencies": {
+    "@howtographql/gatsby-theme": "*"
+  },
+  "devDependencies": {
+    "gatsby": "^2.3.24",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
