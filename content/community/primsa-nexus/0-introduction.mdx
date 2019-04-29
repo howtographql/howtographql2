@@ -15,19 +15,6 @@ correctAnswer: 2
 videoId: oCT4
 ---
 
-import { graphql } from 'gatsby';
-
-export const introductionQuery = graphql`
-  query communityIntroductionQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
-
 [GraphQL](http://www.graphql.org/) is a new API standard that provides a more efficient,
 powerful and flexible alternative to REST. It was developed and
 [open-sourced by Facebook](https://facebook.github.io/react/blog/2015/02/20/introducing-relay-and-graphql.html)

@@ -16,19 +16,6 @@ videoId: b7tMHnxzK34
 duration: 10
 ---
 
-import { graphql } from 'gatsby';
-
-export const bigPictureQuery = graphql`
-  query bigPictureQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
-
 GraphQL has been released only as a _specification_. This means that GraphQL is
 in fact not more than a [long document](https://facebook.github.io/graphql/)
 that describes in detail the behaviour of a _GraphQL server._

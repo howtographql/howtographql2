@@ -16,24 +16,15 @@ videoId: T571423fC68
 duration: 12
 ---
 
-import { graphql } from 'gatsby';
-
-export const betterRestQuery = graphql`
-  query betterRestQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
-
-Over the past decade, [REST](https://en.wikipedia.org/wiki/Representational*state_transfer)
+ the past decade, [REST](https://en.wikipedia.org/wiki/Representational*state_transfer)
 has become the standard (yet a fuzzy one) for designing web APIs. It offers some great ideas,
 such as \_stateless servers\* and _structured access to resources_. However, REST
 APIs have shown to be too inflexible to keep up with the rapidly changing
 requirements of the clients that access them.
+
+```typescript
+const hello;
+```
 
 GraphQL was developed to cope with the need for more flexibility and
 efficiency! It solves many of the shortcomings and inefficiencies that
