@@ -1,4 +1,5 @@
 ---
+id: 'testingids32423'
 path: '/2-core-concepts/'
 title: Core Concepts
 pageTitle: GraphQL Core Concepts Tutorial
@@ -15,19 +16,6 @@ correctAnswer: 0
 videoId: NeQfq0U5LnI
 duration: 15
 ---
-
-import { graphql } from 'gatsby';
-
-export const guideConceptsQuery = graphql`
-  query communityConceptsQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
 
 In this chapter, you'll learn about some fundamental language constructs of
 GraphQL. That includes a first glimpse at the syntax for defining _types_ as

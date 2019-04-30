@@ -1,4 +1,5 @@
 ---
+id: 'testingids'
 path: '/3-big-picture/'
 title: Big Picture (Architecture)
 pageTitle: 'GraphQL Architecture & Big Picture'
@@ -15,19 +16,6 @@ correctAnswer: 3
 videoId: b7tMHnxzK34
 duration: 10
 ---
-
-import { graphql } from 'gatsby';
-
-export const bigPictureQuery = graphql`
-  query bigPictureQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
 
 GraphQL has been released only as a _specification_. This means that GraphQL is
 in fact not more than a [long document](https://facebook.github.io/graphql/)
@@ -144,7 +132,7 @@ rather imperative data fetching approach to a purely declarative one. When
 fetching data from a REST API, most applications will have to go through the
 following steps:
 
-1. construct and send HTTP request (e.g. with ```fetch``` in Javascript)
+1. construct and send HTTP request (e.g. with `fetch` in Javascript)
 2. receive and parse server response
 3. store data locally (either simply in memory orpersistent)
 4. display data in the UI

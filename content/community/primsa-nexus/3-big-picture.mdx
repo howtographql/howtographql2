@@ -1,4 +1,5 @@
 ---
+id: 'testingidsfasdk3n43'
 path: '/3-big-picture/'
 title: Big Picture (Architecture)
 pageTitle: 'GraphQL Architecture & Big Picture'
@@ -15,19 +16,6 @@ correctAnswer: 3
 videoId: b7tMHnxzK34
 duration: 10
 ---
-
-import { graphql } from 'gatsby';
-
-export const communityBigPictureQuery = graphql`
-  query communityBigPictureQuery($pagePath: String!) {
-    mdx(frontmatter: { path: { eq: $pagePath } }) {
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
 
 GraphQL has been released only as a _specification_. This means that GraphQL is
 in fact not more than a [long document](https://facebook.github.io/graphql/)
