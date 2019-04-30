@@ -1,6 +1,5 @@
 {
   "name": "@howtographql/oss",
-  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -11,11 +10,12 @@
     "gatsby": "gatsby"
   },
   "dependencies": {
-    "@howtographql/gatsby-theme": "*"
+    "@howtographql/gatsby-theme": "^1.0.1"
   },
   "devDependencies": {
     "gatsby": "^2.3.24",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "version": "1.0.1"
 }
