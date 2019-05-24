@@ -1,0 +1,36 @@
+---
+id: 'testingsubscriptions'
+path: '/8-subscriptions/'
+pageTitle: '7 Node Realtime with GraphQL Subscriptions, React & Apollo Tutorial'
+description: 'Learn how to implement realtime functionality using GraphQL subscriptions with Apollo Client & React. The websockets will be handled by subscriptions-transport-ws.'
+question: 'What transport does Apollo use to implement subscriptions?'
+answers: ['WebSockets', 'TCP', 'UDP', 'HTTP 2']
+correctAnswer: 0
+videoId: ''
+duration: 0
+videoAuthor: ''
+---
+
+This section is all about bringing realtime functionality into the app by using
+GraphQL subscriptions.
+
+### What are GraphQL Subscriptions?
+
+Subscriptions are a GraphQL feature allowing the server to send data to its
+clients when a specific _event_ happens. Subscriptions are usually implemented
+with [WebSockets](https://en.wikipedia.org/wiki/WebSocket), where the server
+holds a steady connection to the client. This means when working with subscriptions,
+you're breaking the _Request-Response-Cycle_ that was used for all previous interactions
+with the API. The client now initiates a steady connection with the server by specifying
+which event it is interested in. Every time this particular event then happens, the server
+uses the connection to push the expected data to the client.
+
+### Subscriptions with Apollo
+
+When using Apollo, you need to configure your `ApolloClient` with information about
+the subscriptions endpoint. This is done by adding another `ApolloLink` to the Apollo
+middleware chain. This time, it's the `WebSocketLink` from the
+[`apollo-link-ws`](https://github.com/apollographql/apollo-link/tree/master/packages/apollo-link-ws)
+package.
+
+Go and add this dependency to your app first.
