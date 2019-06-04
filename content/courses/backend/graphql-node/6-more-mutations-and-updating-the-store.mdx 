@@ -1,0 +1,27 @@
+---
+id: 'testingidsmoremutations123'
+path: '/6-more-mutations/'
+pageTitle: '5 Node Mutations & Caching with GraphQL, React & Apollo Tutorial'
+description: "Learn how to use Apollo's imperative store API to update the cache after a GraphQL mutation. The updates will automatically end up in your React components."
+question: "What does the 'update' prop of Apollo's <Mutation /> component do?"
+answers:
+  [
+    'It allows to update your Apollo Client dependency locally',
+    'It allows to update the local Apollo store in a declarative fashion',
+    'It allows to update your store based on your mutation’s result',
+    "It updates the GraphQL schema locally so Apollo Client can verify your queries and mutations before they're sent to the server",
+  ]
+correctAnswer: 2
+videoId: ''
+duration: 0
+videoAuthor: ''
+---
+
+The next piece of functionality you'll implement is the voting feature!
+Authenticated users are allowed to submit a vote for a link. The most upvoted
+links will later be displayed on a separate route!
+
+### Preparing the React Components
+
+Once more, the first step to implement this new feature is to make your React
+components ready for the expected functionality.
